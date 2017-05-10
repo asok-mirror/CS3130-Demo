@@ -14,12 +14,12 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
+    ///Button event - Triggers on click of clickMe
     public void clickMe_Click(View target) {
-        TextView displayText =new TextView(this);
         EditText editText = (EditText) findViewById(R.id.txtInputBox);
         String inputString = editText.getText().toString();
-        displayText = (TextView)findViewById(R.id.helloText);
+        TextView displayText = (TextView)findViewById(R.id.helloText);
+        //overrides the text dynamically based on the user input
         displayText.setText(inputString);
     }
 }
